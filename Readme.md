@@ -1,94 +1,34 @@
-# Challenge:
-When our Sitecore Instance is live, we have many content editor users, page editor users and publishers working day in and day out to keep the content up to date as well as making the new content available as soon as possible. <br />
-Now, lets consider a case when there are multiple users publishing simultaneously. Obviously, as Publishing is a pipeline, one user's publishing would be going on while the rest of them are waiting for their turn to come. They get a queued message in the publishing dialog. Now if the users are say in one geographical location, still thing is OK, they may talk to each other and perform publishing but think of a case where the users publishing are managing two different websites in two different geographical locations, but on the same Sitecore instance. <br />
-Now, as the users have other critical tasks too, they do not want to sit and wait for their publishing to be started and get completed, but rather close the publish dialog and continue with their work and somewhere, get the information that their publishing is completed.
+ **Want to know what is Sitecore Interactive Publish module, and why to use it?**
+Check this link: [Sitecore Interactive Publish Documentation](http://varunvns.github.io/Sitecore-Interactive-Publish/) <br/>
 
+## How to Configure the Module:
 
-***
-# Solution
+###Important Note
+1. The Module supports Sitecore 8.0 and above. <br/>
+2. Its good not to install the module directly in your live environment. Check it out on your development boxes and test environments first and only after you feel satisfied, move it to the live environments. <br/>
 
-The solution of all the above cases in different combinations is just one - Sitecore Interactive Publish.
+###For Basic Users:
+1. Go to the Sitecore-Package Folder in Master Branch. <br/>
+2. Take the latest Sitecore Package present at the location. Versions are managed well, so it should not be difficult to spot the latest package zip. The zip contains required items as well as the code files of the module. <br/> 
+3. Simply install it like any other Sitecore Package. <br/>
+4. Make sure you select Overwrite if asked for files and items <br/>
+5. Once the package installation completes, select the checkboxes Restart the Sitecore Client as well as Sitecore Server on the last page of Installation wizard. <br/>
 
-So, when this Sitecore module is installed, we get the following functionalities:<br />
-1. Information of why the publishing is queued, and where does my publishing stand in the queue<br />
-2. If the user closes the publishing dialog, still he gets the notification on Desktop.<br />
-3. In case the user is so busy he/she misses that notification, still nothing to worry about. Sitecore Interactive Publish has added a new chunk of Publish History in Sitecore Desktop as well as Content Editor, where the user can go anytime, and quickly check whether his/her publishing is completed or not.
+###For Advanced Users:
+Choose the project solution based on your personal choice - with TDS or without TDS. <br/>
 
+####Without TDS
 
-***
-# Quick Tour
+1. Install the Sitecore package following the basic user steps. <br/>
+2. Update the Publish Profile as per your environment. <br/>
+3. Publish the Project and check it goes to the right destination. <br/>
+4. Make the required changes and Publish again and check that your changes are available in the Sitecore Website. <br/>
 
-When publishing is going on, only by one user in Sitecore, the Publish Dialog looks same as it normally looks, no change at all. It looks like below:
+####With TDS
+1. Configure TDS Core Database related configurations and Sync the items with Sitecore. <br/>
+2. If you have disabled the File deployment from TDS follow steps 2 thorough 4 above.
 
-![Normal Publishing Scenario - Single User Publishing](https://varunvns.files.wordpress.com/2015/11/normal-publishing-dialog-if-only-one-publishing-job.png)
-
-Now, the moment a second user publishes items in Sitecore, when a Publish is in progress, this is what seen by the user whose publishing is going on.
-
-![A table showing Publishing is running for him, and queued for the second user](https://varunvns.files.wordpress.com/2015/11/publishing-running-for-current-user-with-information-if-there-is-other-publishing-in-queued.png)
-
-And this is what the second users sees on his/her screen:
-
-![Publishing Queued for the second user.](https://varunvns.files.wordpress.com/2015/11/publishing-queued-for-other-user-with-information.png)
-
-From the above screenshots, we can see that the Publish dialog by default shows the Publish Job selected user wise - as well as the Owner and message is available so he/she can get a clear picture of whether his/her items are queued or in publishing. ALso, the status keeps on updating regularly. So the user gets a clear picture of what's going on in the system.
-
-Next, say the user is so frustrated, that he/she closes the Publish Dialog and started working on other things in Sitecore.
-In that case, the user can check for the following notification in Sitecore Desktop:
-
-![Notification in Desktop](https://varunvns.files.wordpress.com/2015/11/notification-on-desktop-that-items-got-published.png)
-
-Next, lets consider a case, the user is extremely busy and missed the notification. Oh, nevermind, we have a simple way of showing him/her that their publishing was done and successful. We call that part of Sitecore Interactive Publish, as the Publish History. 
-The Publish History, can be easily accessed from besides the Switch to another database icon on Sitecore Desktop.
-
-![Recent Publish History in Sitecore Desktop](https://varunvns.files.wordpress.com/2015/11/sitecore-desktop-additional-icon-for-publish-history-besides-database-switch.png)
-
-This shows recent history and the number of items shown here, can be controlled form the Configuration file - Sitecore.Interactive.Publish.config
-The Recent Publish History looks like this in the Sitecore Desktop:
-
-![Recent Publish History in Sitecore Desktop](https://varunvns.files.wordpress.com/2015/11/recent-publishing-history-in-sitecore-desktop.png)
-
-The Recent Publish History is also available from the Content Editor in the Publish Tab
-
-![Recent Publish History from Content Editor](https://varunvns.files.wordpress.com/2015/11/recent-publish-history-in-content-editor.png)
-
-Next, if we want to see the complete Publish History, we have a detail page to show that too. Also, its accesible from 3 places:
-
-* Sitecore Desktop:
-
-![Publish History Detail from Sitecore Desktop](https://varunvns.files.wordpress.com/2015/11/recent-publishing-history-in-sitecore-desktop-opens-detail-page.png)
-
-* Sitecore Start Menu
-
-![Publish History Detail from Sitecore Start Menu](https://varunvns.files.wordpress.com/2015/11/publish-history-detail-page-from-start-menu.png)
-
-* Sitecore Content Editor
-
-![Publish History Detail from Sitecore Content Editor](https://varunvns.files.wordpress.com/2015/11/publish-history-detail-page-from-content-editor.png)
-
-And this is how the Publish History Detail looks like
-
-![Publish History Detail Page](https://varunvns.files.wordpress.com/2015/11/publish-history-details.png)
-
-
-***
-## Advantages of the Sitecore Module 
-### From the Business User's Perspective:
-* Makes it easy for the user to understand why his/her publishing is queued.
-* Recent Publish History is easily accessible from Sitecore Desktop as well as Content Editor and gives the required information of what publishing a user did.
-* In case the user is interested in knowing more about the publishing, he/she can go the Publishing Detail Page, from Sitecore Desktop, Sitecore Start Menu or from the Content Editor and check it out.
-
-### From the Developer's Perspective:
-* Quick and Easy installation as a Sitecore Package.
-* No modifications are required, you can directly install and enjoy the module!
-* In case you want to check the code we have the projects (with and without TDS) available on Github. [https://github.com/varunvns/Sitecore-Interactive-Publish](Sitecore-Interactive-Publish)
-* In case you like the TDS way, we have a TDS Project for you, take those items in your project and sync them with your instance and enjoy the module!
-
-
-## Drawbacks of this Sitecore Module
-* As the module contains an assembly and a config file, it will recycle the application pool of Sitecore Application, making it to restart.
-* Sitecore Interactive Publish cannot be used, if you have a Sitecore Publishing Instance configured (i.e. say, if you have an additional Sitecore instance configured, which takes care of Publishing Jobs for your Sitecore environment, then, in that case, this module wont be useful!)
-* The Publish History shows history of Publishing of only the publishing done after this module is installed. Also, if the PublishHistory.txt file is deleted from the data folder, the publish history will not be available (We have added a new txt file to the logs folder, and adding information of publishing jobs into it, which serves as a source of Publish History for the users. Hence, the publishes done before installing this module will not be available in the Publish History. Also, this file cannot be deleted by Cleanup Agent, but if someone deletes this file, the Publish History will be lost!)
-
+For Advanced users: If you make some changes to the module, don't forget to add it back to the module! We would be really grateful for that!
 
 ***
 ## Future Enhancements
