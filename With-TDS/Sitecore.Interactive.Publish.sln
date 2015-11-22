@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Interactive.Publish.Web", "Sitecore.Interactive.Publish.Web\Sitecore.Interactive.Publish.Web.csproj", "{AFB454D5-65CF-4A0A-ABE3-D4386E622512}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Interactive.Publish.TDS.Core", "Sitecore.Interactive.Publish.TDS.Core\Sitecore.Interactive.Publish.TDS.Core.scproj", "{76B49F8C-366D-4AEC-91C6-CE8A51FE8155}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin-References", "Bin-References", "{F027BDB1-E8CB-4DC6-8E56-9257E637C41F}"
+	ProjectSection(SolutionItems) = preProject
+		Bin-References\Sitecore.Client.dll = Bin-References\Sitecore.Client.dll
+		Bin-References\Sitecore.Kernel.dll = Bin-References\Sitecore.Kernel.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFB454D5-65CF-4A0A-ABE3-D4386E622512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB454D5-65CF-4A0A-ABE3-D4386E622512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB454D5-65CF-4A0A-ABE3-D4386E622512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB454D5-65CF-4A0A-ABE3-D4386E622512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B49F8C-366D-4AEC-91C6-CE8A51FE8155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B49F8C-366D-4AEC-91C6-CE8A51FE8155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B49F8C-366D-4AEC-91C6-CE8A51FE8155}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{76B49F8C-366D-4AEC-91C6-CE8A51FE8155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B49F8C-366D-4AEC-91C6-CE8A51FE8155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B49F8C-366D-4AEC-91C6-CE8A51FE8155}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -609,9 +609,9 @@
              <summary></summary>
             --------------------------------------------------------------------------
         </member>
-        <member name="T:Sitecore.sitecore.admin.ConvertUsersToContacts">
+        <member name="T:Sitecore.sitecore.admin.Aggregation">
             <summary>
-            Convert users to contacts page.
+            Aggregation class.
             </summary>
         </member>
         <member name="T:Sitecore.sitecore.admin.AdminPage">
@@ -639,124 +639,6 @@
             <value>
             <c>true</c> if current user is developer; otherwise, <c>false</c>.
             </value>
-        </member>
-        <member name="F:Sitecore.sitecore.admin.ConvertUsersToContacts.databaseProperties">
-            <summary>
-            The database properties.
-            </summary>
-        </member>
-        <member name="F:Sitecore.sitecore.admin.ConvertUsersToContacts.taskProcessor">
-            <summary>
-            The task processor.
-            </summary>
-        </member>
-        <member name="M:Sitecore.sitecore.admin.ConvertUsersToContacts.ButtonGo_Click(System.Object,System.EventArgs)">
-            <summary>
-            Handles the Button go_ click event.
-            </summary>
-            <param name="sender">
-            The sender.
-            </param>
-            <param name="e">
-            The <see cref="T:System.EventArgs"/> instance containing the event data.
-            </param>
-        </member>
-        <member name="M:Sitecore.sitecore.admin.ConvertUsersToContacts.ProgressTimer_Tick(System.Object,System.EventArgs)">
-            <summary>
-            Handles the Tick event of the ProgressTimer control.
-            </summary>
-            <param name="sender">The source of the event.</param>
-            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="M:Sitecore.sitecore.admin.ConvertUsersToContacts.Page_Load(System.Object,System.EventArgs)">
-            <summary>
-            Handles the Load event of the Page control.
-            </summary>
-            <param name="sender">
-            The source of the event.
-            </param>
-            <param name="e">
-            The <see cref="T:System.EventArgs"/> instance containing the event data.
-            </param>
-        </member>
-        <member name="M:Sitecore.sitecore.admin.ConvertUsersToContacts.GetStatusString(Sitecore.Analytics.Processing.ProcessingTaskStatus)">
-            <summary>
-            The get status string.
-            </summary>
-            <param name="status">
-            The status.
-            </param>
-            <returns>
-            The <see cref="T:System.String"/>.
-            </returns>
-        </member>
-        <member name="F:Sitecore.sitecore.admin.ConvertUsersToContacts.Head1">
-            <summary>
-            Head1 control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:Sitecore.sitecore.admin.ConvertUsersToContacts.mainForm">
-            <summary>
-            mainForm control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:Sitecore.sitecore.admin.ConvertUsersToContacts.ScriptManager1">
-            <summary>
-            ScriptManager1 control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:Sitecore.sitecore.admin.ConvertUsersToContacts.ProgressTimer">
-            <summary>
-            ProgressTimer control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:Sitecore.sitecore.admin.ConvertUsersToContacts.UpdatePanel1">
-            <summary>
-            UpdatePanel1 control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:Sitecore.sitecore.admin.ConvertUsersToContacts.lblProcessingStatus">
-            <summary>
-            lblProcessingStatus control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="F:Sitecore.sitecore.admin.ConvertUsersToContacts.btnGo">
-            <summary>
-            btnGo control.
-            </summary>
-            <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
-            </remarks>
-        </member>
-        <member name="T:Sitecore.sitecore.admin.Aggregation">
-            <summary>
-            Aggregation class.
-            </summary>
         </member>
         <member name="F:Sitecore.sitecore.admin.Aggregation.CheckRefreshSessionTag">
             <summary>
@@ -9333,6 +9215,15 @@
             To modify move field declaration from designer file to code-behind file.
             </remarks>
         </member>
+        <member name="F:Sitecore.Shell.Applications.ContentManager.ContentEditorPage.SearchPanel">
+            <summary>
+            SearchPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
         <member name="F:Sitecore.Shell.Applications.ContentManager.ContentEditorPage.ContentTreePlaceholder">
             <summary>
             ContentTreePlaceholder control.
@@ -9866,6 +9757,21 @@
             <summary>
             Sets the never publish.
             </summary>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.ContentManager.Dialogs.SetPublishing.SetPublishingForm.UpdateVersionState(System.Int32,System.Boolean)">
+            <summary>
+            Updates the state of the version.
+            </summary>
+            <param name="versionNumber">The version number.</param>
+            <param name="isDisabled">if set to <c>true</c> version is disabled.</param>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.ContentManager.Dialogs.SetPublishing.SetPublishingForm.ChangeDateTimePickerState(Sitecore.Web.UI.HtmlControls.Control,System.String,System.Boolean)">
+            <summary>
+            Changes the state of the date time picker.
+            </summary>
+            <param name="parent">The parent.</param>
+            <param name="controlId">The control identifier.</param>
+            <param name="state">if set to <c>true</c> control will be disabled.</param>
         </member>
         <member name="M:Sitecore.Shell.Applications.ContentManager.Dialogs.SetPublishing.SetPublishingForm.RenderItemTab(Sitecore.Data.Items.Item)">
             <summary>
@@ -10717,6 +10623,67 @@
             The property is set and the <see cref="T:System.Collections.Generic.IList`1"/> is read-only.
               </exception>
         </member>
+        <member name="T:Sitecore.Shell.Applications.Install.Controls.FilterEditorControl">
+            <summary>
+            The base class for all other filter editor control classes.
+            </summary>
+        </member>
+        <member name="T:Sitecore.Shell.Applications.Install.IFilterEditorControl">
+            <summary>
+            Filter editor
+            </summary>
+        </member>
+        <member name="T:Sitecore.Shell.Applications.Install.IEditor">
+            <summary>
+            Defines basic methods of an editor
+            </summary>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Install.IEditor.BindTo(System.Object)">
+            <summary>
+            Binds to the instance.
+            </summary>
+            <param name="instance">The instance.</param>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Install.IEditor.Matches(System.Object)">
+            <summary>
+            Returrns a value indicaing whether the inctance matches to this editor.
+            </summary>
+            <param name="instance">The instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Install.IFilterEditorControl.CreateFilter">
+            <summary>
+            Creates a filter.
+            </summary>
+            <returns>A filter.</returns>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Install.Controls.FilterEditorControl.BindTo(System.Object)">
+            <summary>
+            Bind the filter for the control.
+            </summary>
+            <param name="instance">The filter instance.</param>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Install.Controls.FilterEditorControl.Matches(System.Object)">
+            <summary>
+            Returns a value indicaing whether the specified filter matches the editor control.
+            </summary>
+            <param name="instance">The filter instance.</param>
+            <returns><c>true</c> if current instance of the editor can bi bound to the specified filter.</returns>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Install.Controls.FilterEditorControl.CreateFilter">
+            <summary>
+            Creates a filter instance for the editor.
+            </summary>
+            <returns>
+            A filter.
+            </returns>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Install.Controls.FilterEditorControl.InitializeEditorProperties(Sitecore.Shell.Applications.Install.Controls.FilterEditorControl)">
+            <summary>
+            Initializes the editor properties of the current instance by copying values from the given instance.
+            </summary>
+            <param name="editorControl">The editor control to copy property values from.</param>
+        </member>
         <member name="T:Sitecore.Shell.Applications.GlobalHeader">
             <summary>
             
@@ -11370,6 +11337,12 @@
             <returns>
             The validate.
             </returns>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Security.EditUser.EditUserPage.ValidateTicket">
+            <summary>
+            Validates the ticket.
+            </summary>
+            <returns>The validate ticket.</returns>
         </member>
         <member name="M:Sitecore.Shell.Applications.Security.EditUser.EditUserPage.SaveCustomProperties(Sitecore.Security.UserProfile,System.Boolean@)">
             <summary>
@@ -16224,6 +16197,20 @@
             The context.
             </param>
         </member>
+        <member name="M:Sitecore.Shell.Applications.ContentManager.Panels.WorkflowPanel.CanShowCommands(Sitecore.Data.Items.Item,Sitecore.Workflows.WorkflowCommand[])">
+            <summary>
+            Determines whether this instance can show commands.
+            </summary>
+            <param name="item">
+            The item to check.
+            </param>
+            <param name="commands">
+            The commands.
+            </param>
+            <returns>
+            <c>true</c> if this instance [can show commands] the specified item; otherwise, <c>false</c>.
+            </returns>
+        </member>
         <member name="M:Sitecore.Shell.Applications.ContentManager.Panels.WorkflowPanel.GetCommands(Sitecore.Data.Items.Item[],Sitecore.Workflows.IWorkflow@,Sitecore.Workflows.WorkflowCommand[]@)">
             <summary>
             Gets the commands.
@@ -16247,20 +16234,6 @@
             </param>
             <returns>
             The get text.
-            </returns>
-        </member>
-        <member name="M:Sitecore.Shell.Applications.ContentManager.Panels.WorkflowPanel.CanShowCommands(Sitecore.Data.Items.Item,Sitecore.Workflows.WorkflowCommand[])">
-            <summary>
-            Determines whether this instance can show commands.
-            </summary>
-            <param name="item">
-            The item to check.
-            </param>
-            <param name="commands">
-            The commands.
-            </param>
-            <returns>
-            <c>true</c> if this instance [can show commands] the specified item; otherwise, <c>false</c>.
             </returns>
         </member>
         <member name="M:Sitecore.Shell.Applications.ContentManager.Panels.WorkflowPanel.GetCheckInItem">
@@ -18060,6 +18033,9 @@
         <member name="F:Sitecore.Shell.Applications.Globalization.DeleteLanguage.DeleteLanguageForm.ResultText">
             <summary></summary>
         </member>
+        <member name="F:Sitecore.Shell.Applications.Globalization.DeleteLanguage.DeleteLanguageForm.WarningMessage">
+            <summary></summary>
+        </member>
         <member name="M:Sitecore.Shell.Applications.Globalization.DeleteLanguage.DeleteLanguageForm.ActivePageChanged(System.String,System.String)">
             <summary>
             Called when the active page has been changed.
@@ -18101,6 +18077,11 @@
         <member name="M:Sitecore.Shell.Applications.Globalization.DeleteLanguage.DeleteLanguageForm.StartDeleting">
             <summary>
             Starts the deleting.
+            </summary>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Globalization.DeleteLanguage.DeleteLanguageForm.SetVisibilityOfControlFields">
+            <summary>
+            Sets the visibility of control fields.
             </summary>
         </member>
         <member name="M:Sitecore.Shell.Applications.Globalization.DeleteLanguage.DeleteLanguageForm.GetLanguages">
@@ -18359,7 +18340,7 @@
             </summary>
             <param name="linkDatabase">The link database.</param>
             <param name="targetItem">The target item.</param>
-            <param name="removeCloneLinks">if set to <c>true</c> links from clone items will be removed.</param>
+            <param name="removeCloneLinks">If set to <c>True</c> links from clone items will be removed.</param>
         </member>
         <member name="T:Sitecore.Shell.Applications.Dialogs.BreakingLinks.BreakingLinksForm.Relink">
             <summary>
@@ -18402,14 +18383,13 @@
             </summary>
             <param name="linkDatabase">The link database.</param>
             <param name="targetItem">The item to process.</param>
-            <param name="relinkCloneLinks">if set to <c>true</c> links from clones will be processed.</param>
+            <param name="relinkCloneLinks">If set to <c>true</c> links from clones will be processed.</param>
         </member>
-        <member name="M:Sitecore.Shell.Applications.Dialogs.BreakingLinks.BreakingLinksForm.Relink.RelinkLink(Sitecore.Data.Items.Item,Sitecore.Data.Items.Item,Sitecore.Links.ItemLink)">
+        <member name="M:Sitecore.Shell.Applications.Dialogs.BreakingLinks.BreakingLinksForm.Relink.RelinkLink(Sitecore.Data.Items.Item,Sitecore.Links.ItemLink)">
             <summary>
             Removes the link.
             </summary>
             <param name="sourceItem">The source item.</param>
-            <param name="version">The version.</param>
             <param name="itemLink">The item link.</param>
         </member>
         <member name="T:Sitecore.Shell.Applications.Links.EditLinksForm">
@@ -23713,6 +23693,22 @@
               <requires name="destination" condition="none" />
             </contract>
         </member>
+        <member name="M:Sitecore.Shell.Applications.Dialogs.TransferToDatabase.TransferToDatabaseForm.TransferVersionedMediaItemBlob(Sitecore.Data.Items.Item,Sitecore.Data.Items.Item,System.Boolean)">
+            <summary>
+            Transfers the versioned media item BLOB.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="destination">The destination.</param>
+            <param name="processChildren">If set to <c>true</c> [process children].</param>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Dialogs.TransferToDatabase.TransferToDatabaseForm.TransferMediaItemBlob(Sitecore.Data.Items.Item,Sitecore.Data.Items.Item,System.Boolean)">
+            <summary>
+            Transfers the media item BLOB version.
+            </summary>
+            <param name="source">The source.</param>
+            <param name="destination">The destination.</param>
+            <param name="processChildren">if set to <c>true</c> [process children].</param>
+        </member>
         <member name="T:SitecoreClient.sitecore.shell.Applications.Upload.UploadPage">
             <summary>
             Represents a UploadPage.
@@ -23904,7 +23900,7 @@
             The text.
             </summary>
         </member>
-        <member name="M:Sitecore.Shell.Applications.Dialogs.YesNoCancel.YesNoCancelForm.CancelPrimary">
+        <member name="M:Sitecore.Shell.Applications.Dialogs.YesNoCancel.YesNoCancelForm.CancelClick">
             <summary>
             Closes this dialog. Dialog value will be 'cancel'.
             </summary>
@@ -24552,7 +24548,7 @@
             The context database.
             </summary>
         </member>
-        <member name="F:Sitecore.Shell.Applications.Globalization.ImportLanguage.ImportLanguageForm.Importer.dictionarySections">
+        <member name="F:Sitecore.Shell.Applications.Globalization.ImportLanguage.ImportLanguageForm.Importer.sectionDictionaries">
             <summary>
             Cache of dictionary sections.
             </summary>
@@ -30305,6 +30301,12 @@
             The _state names.
             </summary>
         </member>
+        <member name="F:Sitecore.Shell.Applications.Workbox.WorkboxForm.Offset">
+            <summary>
+            Gets or sets the offset(what page we are on).
+            </summary>
+            <value>The size of the offset.</value>
+        </member>
         <member name="M:Sitecore.Shell.Applications.Workbox.WorkboxForm.Comment(Sitecore.Web.UI.Sheer.ClientPipelineArgs)">
             <summary>
             Comments the specified args.
@@ -30444,6 +30446,12 @@
             Refreshes the page.
             </summary>
         </member>
+        <member name="M:Sitecore.Shell.Applications.Workbox.WorkboxForm.Refresh(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Refreshes the page.
+            </summary>
+            <param name="urlArguments">The URL arguments.</param>
+        </member>
         <member name="M:Sitecore.Shell.Applications.Workbox.WorkboxForm.ShowHistory(Sitecore.Web.UI.Sheer.Message,System.String)">
             <summary>
             Shows the history.
@@ -30486,19 +30494,14 @@
             The control.
             </param>
         </member>
-        <member name="M:Sitecore.Shell.Applications.Workbox.WorkboxForm.CreateNavigator(Sitecore.Web.UI.HtmlControls.Section,System.String,System.Int32)">
+        <member name="M:Sitecore.Shell.Applications.Workbox.WorkboxForm.CreateNavigator(Sitecore.Web.UI.HtmlControls.Section,System.String,System.Int32,System.Int32)">
             <summary>
             Creates the navigator.
             </summary>
-            <param name="section">
-            The section.
-            </param>
-            <param name="id">
-            The id.
-            </param>
-            <param name="count">
-            The count.
-            </param>
+            <param name="section">The section.</param>
+            <param name="id">The id.</param>
+            <param name="count">The count.</param>
+            <param name="offset">The offset.</param>
         </member>
         <member name="M:Sitecore.Shell.Applications.Workbox.WorkboxForm.GetHistory(Sitecore.Workflows.IWorkflow,Sitecore.Workflows.WorkflowEvent[])">
             <summary>
@@ -36256,8 +36259,23 @@
             <summary>
             Initializes a new instance of the <see cref="T:Sitecore.Shell.Applications.ContentManager.ReturnFieldEditorValues.ReturnFieldEditorValuesArgs"/> class.
             </summary>
-            <param name="options">The options.</param>
-            <param name="fieldInfo">The field info.</param>
+            <param name="options"> The Options</param>
+            <param name="fieldInfo"> The field info</param>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.ContentManager.ReturnFieldEditorValues.ReturnFieldEditorValuesArgs.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+             Initializes a new instance of the <see cref="T:Sitecore.Shell.Applications.ContentManager.ReturnFieldEditorValues.ReturnFieldEditorValuesArgs"/> class from a serialization context.
+             Deserialization constructor.
+            </summary>
+            <param name="info">The serialized data.</param>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.ContentManager.ReturnFieldEditorValues.ReturnFieldEditorValuesArgs.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> with the data needed to serialize the target object.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"></see> to populate with data.</param>
+            <param name="context">The destination (see <see cref="T:System.Runtime.Serialization.StreamingContext"></see>) for this serialization.</param>
         </member>
         <member name="P:Sitecore.Shell.Applications.ContentManager.ReturnFieldEditorValues.ReturnFieldEditorValuesArgs.Options">
             <summary>
@@ -36673,24 +36691,6 @@
         </member>
         <member name="T:Sitecore.Shell.Applications.Install.Controls.BaseSourceEditor">
             <summary></summary>
-        </member>
-        <member name="T:Sitecore.Shell.Applications.Install.IEditor">
-            <summary>
-            Defines basic methods of an editor
-            </summary>
-        </member>
-        <member name="M:Sitecore.Shell.Applications.Install.IEditor.BindTo(System.Object)">
-            <summary>
-            Binds to the instance.
-            </summary>
-            <param name="instance">The instance.</param>
-        </member>
-        <member name="M:Sitecore.Shell.Applications.Install.IEditor.Matches(System.Object)">
-            <summary>
-            Returrns a value indicaing whether the inctance matches to this editor.
-            </summary>
-            <param name="instance">The instance.</param>
-            <returns></returns>
         </member>
         <member name="F:Sitecore.Shell.Applications.Install.Controls.BaseSourceEditor.Tabs">
             <summary></summary>
@@ -39688,12 +39688,13 @@
             <param name="version2">The version2.</param>
             <returns>The diff.</returns>
         </member>
-        <member name="M:Sitecore.Shell.Applications.ContentEditor.TranslatorFormatter.GetField(Sitecore.Shell.Applications.ContentManager.Editor.Field,Sitecore.Globalization.Language)">
+        <member name="M:Sitecore.Shell.Applications.ContentEditor.TranslatorFormatter.GetField(Sitecore.Shell.Applications.ContentManager.Editor.Field,Sitecore.Globalization.Language,Sitecore.Data.Version)">
             <summary>
             Gets the field.
             </summary>
             <param name="field">The field.</param>
             <param name="language">The language.</param>
+            <param name="version">The version.</param>
             <returns></returns>
         </member>
         <member name="M:Sitecore.Shell.Applications.ContentEditor.TranslatorFormatter.GetFieldEditor(Sitecore.Data.Items.Item)">
@@ -41025,17 +41026,6 @@
         <member name="T:Sitecore.Shell.Applications.Install.Controls.FileDateFilterEditor">
             <summary></summary>
         </member>
-        <member name="T:Sitecore.Shell.Applications.Install.IFilterEditorControl">
-            <summary>
-            Filter editor
-            </summary>
-        </member>
-        <member name="M:Sitecore.Shell.Applications.Install.IFilterEditorControl.CreateFilter">
-            <summary>
-            Creates a filter.
-            </summary>
-            <returns>A filter.</returns>
-        </member>
         <member name="F:Sitecore.Shell.Applications.Install.Controls.FileDateFilterEditor.PastDays">
             <summary></summary>
         </member>
@@ -41081,6 +41071,12 @@
             Creates a filter.
             </summary>
             <returns>A filter.</returns>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Install.Controls.FileDateFilterEditor.InitializeEditorProperties(Sitecore.Shell.Applications.Install.Controls.FilterEditorControl)">
+            <summary>
+            Initializes the editor properties of the current instance by copying values from the given instance.
+            </summary>
+            <param name="editorControl">The editor control to copy property values from.</param>
         </member>
         <member name="M:Sitecore.Shell.Applications.Install.Controls.FileDateFilterEditor.ClearFilter">
             <summary>
@@ -41266,6 +41262,12 @@
             </summary>
             <returns>A filter.</returns>
         </member>
+        <member name="M:Sitecore.Shell.Applications.Install.Controls.ItemDateFilterEditor.InitializeEditorProperties(Sitecore.Shell.Applications.Install.Controls.FilterEditorControl)">
+            <summary>
+            Initializes the editor properties of the current instance by copying values from the given instance.
+            </summary>
+            <param name="editorControl">The editor control to copy property values from.</param>
+        </member>
         <member name="M:Sitecore.Shell.Applications.Install.Controls.ItemDateFilterEditor.ClearFilter">
             <summary></summary>
         </member>
@@ -41329,6 +41331,12 @@
             Creates a filter.
             </summary>
             <returns>A filter.</returns>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Install.Controls.ItemLanguageFilterEditor.InitializeEditorProperties(Sitecore.Shell.Applications.Install.Controls.FilterEditorControl)">
+            <summary>
+            Initializes the editor properties of the current instance by copying values from the given instance.
+            </summary>
+            <param name="editorControl">The editor control to copy property values from.</param>
         </member>
         <member name="M:Sitecore.Shell.Applications.Install.Controls.ItemLanguageFilterEditor.BindTo(System.Object)">
             <summary>
@@ -41563,6 +41571,12 @@
             Creates a filter.
             </summary>
             <returns>A filter.</returns>
+        </member>
+        <member name="M:Sitecore.Shell.Applications.Install.Controls.ItemUserFilterEditor.InitializeEditorProperties(Sitecore.Shell.Applications.Install.Controls.FilterEditorControl)">
+            <summary>
+            Initializes the editor properties of the current instance by copying values from the given instance.
+            </summary>
+            <param name="editorControl">The editor control to copy property values from.</param>
         </member>
         <member name="M:Sitecore.Shell.Applications.Install.Controls.ItemUserFilterEditor.BindTo(System.Object)">
             <summary>
@@ -47826,6 +47840,13 @@
             Gets the upgrade steps from the assembly.
             </summary>
             <returns>The upgrade steps.</returns>
+        </member>
+        <member name="M:Sitecore.Shell.Upgrades.PostStep.IsPostStep(System.Type)">
+            <summary>
+            Checks if the given type is defined as post step. If the method fails it is logged and false is returned.
+            </summary>
+            <param name="type">The type to check.</param>
+            <returns><c>True</c>, if the type has the <c>UpgradeStepAttribute</c> defined, otherwise <c>false</c>. If loading the type failed, <c>false</c>.</returns>
         </member>
         <member name="M:Sitecore.Shell.Upgrades.PostStep.Run(Sitecore.Install.Framework.ITaskOutput,System.Collections.Specialized.NameValueCollection)">
             <summary>

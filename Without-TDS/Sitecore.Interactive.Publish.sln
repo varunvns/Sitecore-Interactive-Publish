@@ -5,6 +5,12 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Interactive.Publish.Web", "Sitecore.Interactive.Publish.Web\Sitecore.Interactive.Publish.Web.csproj", "{AFB454D5-65CF-4A0A-ABE3-D4386E622512}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin-References", "Bin-References", "{D335E228-F8A0-495E-80ED-0A51C28C317B}"
+	ProjectSection(SolutionItems) = preProject
+		Bin-References\Sitecore.Client.dll = Bin-References\Sitecore.Client.dll
+		Bin-References\Sitecore.Kernel.dll = Bin-References\Sitecore.Kernel.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

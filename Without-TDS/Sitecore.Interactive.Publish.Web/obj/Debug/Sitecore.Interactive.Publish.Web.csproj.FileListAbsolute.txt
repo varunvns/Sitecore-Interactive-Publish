@@ -16,3 +16,12 @@ C:\Varun\My-Stuff\Personal\Sitecore-Modules\Sitecore-Interactive-Pubish\Without-
 C:\Varun\My-Stuff\Personal\Sitecore-Modules\Sitecore-Interactive-Pubish\Without-TDS\Sitecore.Interactive.Publish.Web\obj\Debug\Sitecore.Interactive.Publish.Web.csprojResolveAssemblyReference.cache
 C:\Varun\My-Stuff\Personal\Sitecore-Modules\Sitecore-Interactive-Pubish\Without-TDS\Sitecore.Interactive.Publish.Web\obj\Debug\Sitecore.Interactive.Publish.Web.dll
 C:\Varun\My-Stuff\Personal\Sitecore-Modules\Sitecore-Interactive-Pubish\Without-TDS\Sitecore.Interactive.Publish.Web\obj\Debug\Sitecore.Interactive.Publish.Web.pdb
+C:\Users\vshringarpure.HZI\Documents\GitHub\Sitecore-Interactive-Publish\Without-TDS\Sitecore.Interactive.Publish.Web\bin\Sitecore.Interactive.Publish.Web.dll
+C:\Users\vshringarpure.HZI\Documents\GitHub\Sitecore-Interactive-Publish\Without-TDS\Sitecore.Interactive.Publish.Web\bin\Sitecore.Interactive.Publish.Web.pdb
+C:\Users\vshringarpure.HZI\Documents\GitHub\Sitecore-Interactive-Publish\Without-TDS\Sitecore.Interactive.Publish.Web\bin\Sitecore.Client.dll
+C:\Users\vshringarpure.HZI\Documents\GitHub\Sitecore-Interactive-Publish\Without-TDS\Sitecore.Interactive.Publish.Web\bin\Sitecore.Kernel.dll
+C:\Users\vshringarpure.HZI\Documents\GitHub\Sitecore-Interactive-Publish\Without-TDS\Sitecore.Interactive.Publish.Web\bin\Sitecore.Client.xml
+C:\Users\vshringarpure.HZI\Documents\GitHub\Sitecore-Interactive-Publish\Without-TDS\Sitecore.Interactive.Publish.Web\bin\Sitecore.Kernel.xml
+C:\Users\vshringarpure.HZI\Documents\GitHub\Sitecore-Interactive-Publish\Without-TDS\Sitecore.Interactive.Publish.Web\obj\Debug\Sitecore.Interactive.Publish.Web.csprojResolveAssemblyReference.cache
+C:\Users\vshringarpure.HZI\Documents\GitHub\Sitecore-Interactive-Publish\Without-TDS\Sitecore.Interactive.Publish.Web\obj\Debug\Sitecore.Interactive.Publish.Web.dll
+C:\Users\vshringarpure.HZI\Documents\GitHub\Sitecore-Interactive-Publish\Without-TDS\Sitecore.Interactive.Publish.Web\obj\Debug\Sitecore.Interactive.Publish.Web.pdb

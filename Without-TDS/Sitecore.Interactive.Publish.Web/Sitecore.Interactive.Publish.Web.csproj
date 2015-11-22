@@ -40,10 +40,10 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Sitecore.Client">
-      <HintPath>Libraries\Sitecore.Client.dll</HintPath>
+      <HintPath>..\Bin-References\Sitecore.Client.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>Libraries\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\Bin-References\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
