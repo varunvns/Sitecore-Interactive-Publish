@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sitecore Interactive Publish by varunvns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Sitecore Interactive Publish</h1>
+      <h2 class="project-tagline">A Sitecore Module mainly useful for Sitecore Business users</h2>
+      <a href="https://github.com/varunvns/Sitecore-Interactive-Publish" class="btn">View on GitHub</a>
+      <a href="https://github.com/varunvns/Sitecore-Interactive-Publish/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/varunvns/Sitecore-Interactive-Publish/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="challenge" class="anchor" href="#challenge" aria-hidden="true"><span class="octicon octicon-link"></span></a>Challenge:</h1>
+
+<p>When our Sitecore Instance is live, we have many content editor users, page editor users and publishers working day in and day out to keep the content up to date as well as making the new content available as soon as possible. <br>
+Now, lets consider a case when there are multiple users publishing simultaneously. Obviously, as Publishing is a pipeline, one user's publishing would be going on while the rest of them are waiting for their turn to come. They get a queued message in the publishing dialog. Now if the users are say in one geographical location, still thing is OK, they may talk to each other and perform publishing but think of a case where the users publishing are managing two different websites in two different geographical locations, but on the same Sitecore instance. <br>
+Now, as the users have other critical tasks too, they do not want to sit and wait for their publishing to be started and get completed, but rather close the publish dialog and continue with their work and somewhere, get the information that their publishing is completed.</p>
+
+<hr>
+
+<h1>
+<a id="solution" class="anchor" href="#solution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solution</h1>
+
+<p>The solution of all the above cases in different combinations is just one - Sitecore Interactive Publish.</p>
+
+<p>So, when this Sitecore module is installed, we get the following functionalities:<br>
+1. Information of why the publishing is queued, and where does my publishing stand in the queue<br>
+2. If the user closes the publishing dialog, still he gets the notification on Desktop.<br>
+3. In case the user is so busy he/she misses that notification, still nothing to worry about. Sitecore Interactive Publish has added a new chunk of Publish History in Sitecore Desktop as well as Content Editor, where the user can go anytime, and quickly check whether his/her publishing is completed or not.</p>
+
+<hr>
+
+<h1>
+<a id="quick-tour" class="anchor" href="#quick-tour" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick Tour</h1>
+
+<p>When publishing is going on, only by one user in Sitecore, the Publish Dialog looks same as it normally looks, no change at all. It looks like below:</p>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/normal-publishing-dialog-if-only-one-publishing-job.png" alt="Normal Publishing Scenario - Single User Publishing"></p>
+
+<p>Now, the moment a second user publishes items in Sitecore, when a Publish is in progress, this is what seen by the user whose publishing is going on.</p>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/publishing-running-for-current-user-with-information-if-there-is-other-publishing-in-queued.png" alt="A table showing Publishing is running for him, and queued for the second user"></p>
+
+<p>And this is what the second users sees on his/her screen:</p>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/publishing-queued-for-other-user-with-information.png" alt="Publishing Queued for the second user."></p>
+
+<p>From the above screenshots, we can see that the Publish dialog by default shows the Publish Job selected user wise - as well as the Owner and message is available so he/she can get a clear picture of whether his/her items are queued or in publishing. ALso, the status keeps on updating regularly. So the user gets a clear picture of what's going on in the system.</p>
+
+<p>Next, say the user is so frustrated, that he/she closes the Publish Dialog and started working on other things in Sitecore.
+In that case, the user can check for the following notification in Sitecore Desktop:</p>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/notification-on-desktop-that-items-got-published.png" alt="Notification in Desktop"></p>
+
+<p>Next, lets consider a case, the user is extremely busy and missed the notification. Oh, nevermind, we have a simple way of showing him/her that their publishing was done and successful. We call that part of Sitecore Interactive Publish, as the Publish History. 
+The Publish History, can be easily accessed from besides the Switch to another database icon on Sitecore Desktop.</p>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/sitecore-desktop-additional-icon-for-publish-history-besides-database-switch.png" alt="Recent Publish History in Sitecore Desktop"></p>
+
+<p>This shows recent history and the number of items shown here, can be controlled form the Configuration file - Sitecore.Interactive.Publish.config
+The Recent Publish History looks like this in the Sitecore Desktop:</p>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/recent-publishing-history-in-sitecore-desktop.png" alt="Recent Publish History in Sitecore Desktop"></p>
+
+<p>The Recent Publish History is also available from the Content Editor in the Publish Tab</p>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/recent-publish-history-in-content-editor.png" alt="Recent Publish History from Content Editor"></p>
+
+<p>Next, if we want to see the complete Publish History, we have a detail page to show that too. Also, its accesible from 3 places:</p>
+
+<ul>
+<li>Sitecore Desktop:</li>
+</ul>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/recent-publishing-history-in-sitecore-desktop-opens-detail-page.png" alt="Publish History Detail from Sitecore Desktop"></p>
+
+<ul>
+<li>Sitecore Start Menu</li>
+</ul>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/publish-history-detail-page-from-start-menu.png" alt="Publish History Detail from Sitecore Start Menu"></p>
+
+<ul>
+<li>Sitecore Content Editor</li>
+</ul>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/publish-history-detail-page-from-content-editor.png" alt="Publish History Detail from Sitecore Content Editor"></p>
+
+<p>And this is how the Publish History Detail looks like</p>
+
+<p><img src="https://varunvns.files.wordpress.com/2015/11/publish-history-details.png" alt="Publish History Detail Page"></p>
+
+<hr>
+
+<h2>
+<a id="advantages-of-the-sitecore-module" class="anchor" href="#advantages-of-the-sitecore-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advantages of the Sitecore Module</h2>
+
+<h3>
+<a id="from-the-business-users-perspective" class="anchor" href="#from-the-business-users-perspective" aria-hidden="true"><span class="octicon octicon-link"></span></a>From the Business User's Perspective:</h3>
+
+<ul>
+<li>Makes it easy for the user to understand why his/her publishing is queued.</li>
+<li>Recent Publish History is easily accessible from Sitecore Desktop as well as Content Editor and gives the required information of what publishing a user did.</li>
+<li>In case the user is interested in knowing more about the publishing, he/she can go the Publishing Detail Page, from Sitecore Desktop, Sitecore Start Menu or from the Content Editor and check it out.</li>
+</ul>
+
+<h3>
+<a id="from-the-developers-perspective" class="anchor" href="#from-the-developers-perspective" aria-hidden="true"><span class="octicon octicon-link"></span></a>From the Developer's Perspective:</h3>
+
+<ul>
+<li>Quick and Easy installation as a Sitecore Package.</li>
+<li>No modifications are required, you can directly install and enjoy the module!</li>
+<li>In case you want to check the code we have the projects (with and without TDS) available on Github. <a href="Sitecore-Interactive-Publish">https://github.com/varunvns/Sitecore-Interactive-Publish</a>
+</li>
+<li>In case you like the TDS way, we have a TDS Project for you, take those items in your project and sync them with your instance and enjoy the module!</li>
+</ul>
+
+<h2>
+<a id="drawbacks-of-this-sitecore-module" class="anchor" href="#drawbacks-of-this-sitecore-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>Drawbacks of this Sitecore Module</h2>
+
+<ul>
+<li>As the module contains an assembly and a config file, it will recycle the application pool of Sitecore Application, making it to restart.</li>
+<li>Sitecore Interactive Publish cannot be used, if you have a Sitecore Publishing Instance configured (i.e. say, if you have an additional Sitecore instance configured, which takes care of Publishing Jobs for your Sitecore environment, then, in that case, this module wont be useful!)</li>
+<li>The Publish History shows history of Publishing of only the publishing done after this module is installed. Also, if the PublishHistory.txt file is deleted from the data folder, the publish history will not be available (We have added a new txt file to the logs folder, and adding information of publishing jobs into it, which serves as a source of Publish History for the users. Hence, the publishes done before installing this module will not be available in the Publish History. Also, this file cannot be deleted by Cleanup Agent, but if someone deletes this file, the Publish History will be lost!)</li>
+</ul>
+
+<h2>
+<a id="future-enhancements" class="anchor" href="#future-enhancements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Future Enhancements</h2>
+
+<ul>
+<li>We are thinking add a new functionality to the Publish dialog that of Hide it. So when the user hides it, and then with a shortcut of Show Publish Dialog - shows the same publish dialog back, showing the current status of the Publish Job.</li>
+<li>We are thinking of making use of the History Tables and taking some information and showing it in the Publish History.</li>
+<li>We are thinking including the paths of items published and whether individually or with Subitems would be a useful information, we have still not explored this, but we would do it in sometime moving forward.</li>
+</ul>
+
+<h2>
+<a id="contribute-to-the-sitecore-module" class="anchor" href="#contribute-to-the-sitecore-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contribute to the Sitecore Module</h2>
+
+<p>Well, if you wish to contribute to this Sitecore Module, then you need to take the following steps: <br>
+1. Fork the Development Branch of the Module on Github. <br>
+2. Add the code that you wish to.<br>
+3. Create a Pull request, so that we can understand that you have added some functionality.<br>
+4. You also need to update the readme and tell us why you added it and which files were updated.<br>
+5. We will test the code on our side and will include it in the main dev branch and then the master branch if we don't find anything malicious. Also, its not like if you send a code we will add it, if it doesn't go with the concept or if it contains some malicious code, we might reject the code too. So sorry if that happens with you.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/varunvns/Sitecore-Interactive-Publish">Sitecore Interactive Publish</a> is maintained by <a href="https://github.com/varunvns">varunvns</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
